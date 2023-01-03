@@ -1,0 +1,156 @@
+[
+{
+  "qid": "prp1",
+  "questTitle": "Debut",
+  "requirements": {},
+  "type": "Elimination",
+  "questMap": ["Any"],
+  "Tasks": ["Eliminate 5 Scavs all over the Tarkov territory", "Obtain and hand over 2 MP-133 shotguns"],
+  "itemsNeeded": {
+    "MP-133 12ga shotgun": 2
+  },
+  "questRewards": {
+    "EXP": 1700,
+    "PraporRep": 0.02,
+    "JaegerRep": 0.01,
+    "Roubles": {
+      "ic0": 15000,
+      "ic1": 15750,
+      "ic2": 17250
+    },
+    "PP-91 \"Kedr\" submachine gun": 1,
+    "9x18mm PM BZhT gzh": 60,
+    "UnlockedPurchases": {
+      "AKS-74U": {
+        "trader": "prp",
+        "level": "LL1"
+      }
+    }
+  },
+  "forKappa": 1,
+  "prevQuests": [],
+  "nextQuests": ["prp2", "prp3"]
+},
+
+{
+  "qid": "prp2",
+  "questTitle": "Search Mission",
+  "requirements": {
+    "level": 5
+  },
+  "type": "Completion",
+  "questMap": ["Woods"],
+  "tasks": ["Find Prapor's missing convoy on Woods", "Locate the temporary USEC camp", "Survive and extract from the location"],
+  "itemsNeeded": {},
+  "questRewards": {
+    "EXP": 2800,
+    "PraporRep": 0.02,
+    "Roubles": {
+      "ic0": 22000,
+      "ic1": 23100,
+      "ic2": 25300
+    },
+    "EYE MK.2 professional hand-held compass": 1,
+    "Woods plan map": 1,
+    "UnlockedPurchases": {}
+  },
+  "forKappa": 1,
+  "prevQuests": ["prp1"],
+  "nextQuests": []
+},
+
+{
+  "qid": "prp3",
+  "questTitle": "Checking",
+  "requirements": {
+    "level": 2
+  },
+  "type": "PickUp",
+  "questMap": ["Customs"],
+  "Tasks": [{ "main": "Obtain the Bronze pocket watch on a chain on Customs", "optional": "Obtain the key to the fuel tanker truck" }, "Hand over the pocket watch"],
+  "itemsNeeded": {},
+  "questRewards": {
+    "EXP": 1800,
+    "PraporRep": 0.03,
+    "Roubles": {
+      "ic0": 15000,
+      "ic1": 15750,
+      "ic2": 17250
+    },
+    "Simonov SKS 7.62x39 carbine": 1,
+    "7.62x39mm PS gzh": 60,
+    "UnlockedPurchases": {}
+  },
+  "forKappa": 1,
+  "prevQuests": ["prp1"],
+  "nextQuests": ["prp4", "prp5"]
+},
+
+{
+  "qid": "prp4",
+  "questTitle": "Shootout Picnic",
+  "requirements": {
+    "level": 3
+  },
+  "type": "Elimination",
+  "questMap": ["Woods"],
+  "Tasks": ["Eliminate 15 Scavs on Woods"],
+  "itemsNeeded": {},
+  "questRewards": {
+    "EXP": 2000,
+    "PraporRep": 0.03,
+    "JaegerRep": 0.01,
+    "Roubles": {
+      "ic0": 20000,
+      "ic1": 21000,
+      "ic2": 23000
+    },
+    "Kalashnikov AKS-74UN 5.45x39 assault rifle": 1,
+    "AK-74 5.45x39 6L20 30-round magazine": 3,
+    "5.45x39mm PP gs": 90,
+    "UnlockedPurchases": {
+      "Lebedev PL-15 9x19 pistol": {
+        "trader": "prp",
+        "level": "LL1"
+      }
+    }
+  },
+  "forKappa": 1,
+  "prevQuests": ["prp3"],
+  "nextQuests": []
+},
+
+{
+  "qid": "prp5",
+  "questTitle": "Delivery from the Past",
+  "requirements": {
+    "level": 5
+  },
+  "type": "PickUp",
+  "questMap": ["Customs", "Factory"],
+  "Tasks": ["Obtain the secure folder in the Tarcone Directors office at the Customs terminal warehouse", "Stash the package in the Factory break room (2nd floor near Gate 3)", "Survive and extract from Factory"],
+  "itemsNeeded": {},
+  "questRewards": {
+    "EXP": 4000,
+    "PraporRep": 0.03,
+    "Roubles": {
+      "ic0": 20000,
+      "ic1": 21000,
+      "ic2": 23000
+    },
+    "Saiga 12ga ver.10 12/76 semi-automatic shotgun": 1,
+    "SOK-12 12/76 sb.5 5-round magazine": 4,
+    "12/70 7mm buckshot": 40,
+    "UnlockedPurchases": {
+      "5.45x39mm PS gs": {
+        "trader": "prp",
+        "level": "LL1"
+      }
+    }
+  },
+  "forKappa": 1,
+  "prevQuests": ["prp3"],
+  "nextQuests": ["prp6"]
+}
+
+]
