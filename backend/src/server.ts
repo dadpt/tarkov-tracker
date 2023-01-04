@@ -1,22 +1,32 @@
-require('dotenv').config();
-
-const express = require('express');
+import dotenv from 'dotenv'
+dotenv.config();
+import express from "express";
+import mongoose from "mongoose";
+import questsRouter from './routes/quests';
 
 // express app
 const app = express();
 
 // middleware
+app.use(express.json());
+
 app.use((req: any, res: any, next: any) => {
     console.log(req.path, req.method)
     next()
 })
 
 // routes
-app.get('/', (req: any, res: any) => {
-    res.json({mssg: 'hello world!'});
-})
+app.use('', questsRouter)
 
-// listen for requests
-app.listen(process.env.PORT, () => {
-    console.log('listening on port', process.env.PORT);
-})
+// connect to DB
+mongoose.set('strictQuery', true);
+mongoose.connect(process.env.MONGO_URI as string)
+    .then(() => {
+        // listen for requests
+        app.listen(process.env.PORT, () => {
+            console.log('connected to db & listening on port', process.env.PORT);
+        })
+    })
+    .catch((error) => {
+        console.log(error);
+    })
