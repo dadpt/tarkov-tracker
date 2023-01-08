@@ -1,19 +1,19 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const express = require('express');
-const router = express.Router();
+const express_1 = __importDefault(require("express"));
+const router = express_1.default.Router();
+const questControllers_1 = require("../controllers/questControllers");
 // GET home page
 router.get('/', (req, res) => {
     res.json({ mssg: 'GET home page' });
 });
 // GET quests
-router.get('/quests', (req, res) => {
-    res.json({ mssg: 'GET list of quests' });
-});
+router.get('/quests', questControllers_1.getQuests);
 // GET individual quest
-router.get('/quests/:id', (req, res) => {
-    res.json({ mssg: 'GET individual quest' });
-});
+router.get('/quests/:id', questControllers_1.getQuest);
 // GET user profile
 router.get('/:userid', (req, res) => {
     res.json({ mssg: 'GET user profile' });

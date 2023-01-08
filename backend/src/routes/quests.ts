@@ -1,5 +1,6 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
+import { getQuest, getQuests } from '../controllers/questControllers';
 
 // GET home page
 router.get('/', (req: any, res: any) => {
@@ -7,14 +8,10 @@ router.get('/', (req: any, res: any) => {
 })
 
 // GET quests
-router.get('/quests', (req: any, res: any) => {
-    res.json({mssg: 'GET list of quests'})
-})
+router.get('/quests', getQuests);
 
 // GET individual quest
-router.get('/quests/:id', (req: any, res: any) => {
-    res.json({mssg: 'GET individual quest'})
-})
+router.get('/quests/:id', getQuest);
 
 // GET user profile
 router.get('/:userid', (req: any, res: any) => {

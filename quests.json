@@ -36,7 +36,8 @@
   "qid": "prp2",
   "questTitle": "Search Mission",
   "requirements": {
-    "level": 5
+    "level": 5,
+    "quests": ["prp1"]
   },
   "type": "Completion",
   "questMap": ["Woods"],
@@ -63,7 +64,8 @@
   "qid": "prp3",
   "questTitle": "Checking",
   "requirements": {
-    "level": 2
+    "level": 2,
+    "quests": ["prp1"]
   },
   "type": "PickUp",
   "questMap": ["Customs"],
@@ -90,7 +92,8 @@
   "qid": "prp4",
   "questTitle": "Shootout Picnic",
   "requirements": {
-    "level": 3
+    "level": 3,
+    "quests": ["prp3"]
   },
   "type": "Elimination",
   "questMap": ["Woods"],
@@ -124,7 +127,8 @@
   "qid": "prp5",
   "questTitle": "Delivery from the Past",
   "requirements": {
-    "level": 5
+    "level": 5,
+    "quests": ["prp3"]
   },
   "type": "PickUp",
   "questMap": ["Customs", "Factory"],
