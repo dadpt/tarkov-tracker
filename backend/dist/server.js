@@ -8,10 +8,12 @@ dotenv_1.default.config();
 const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
 const quests_1 = __importDefault(require("./routes/quests"));
+const cors_1 = __importDefault(require("cors"));
 // express app
 const app = (0, express_1.default)();
 // middleware
 app.use(express_1.default.json());
+app.use((0, cors_1.default)());
 app.use((req, res, next) => {
     console.log(req.path, req.method);
     next();

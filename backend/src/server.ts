@@ -3,12 +3,14 @@ dotenv.config();
 import express from "express";
 import mongoose from "mongoose";
 import questsRouter from './routes/quests';
+import cors from 'cors';
 
 // express app
 const app = express();
 
 // middleware
 app.use(express.json());
+app.use(cors());
 
 app.use((req: any, res: any, next: any) => {
     console.log(req.path, req.method)
